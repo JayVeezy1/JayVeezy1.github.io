@@ -6,46 +6,79 @@ Offene Aufgaben für die Website-Entwicklung.
 
 ## Inhalt
 
+- [ ] **Aktuelle Projekte** ergänzen – weitere echte Projekte mit Beschreibung und GitHub-Links
 - [ ] **Masterarbeit**: vollständigen Text verlinken (aktuell nur GitHub-Repo verlinkt)
-- [ ] **Seminararbeiten**: bisherige Seminararbeiten sammeln und ebenfalls als Publications verlinken
-- [ ] **Aktuelle Projekte** eintragen – echte Projektbeschreibungen und GitHub-Links ergänzen
-- [ ] **Profilfoto** in `assets/` ablegen und `<img>` in `index.html` auf lokale Datei umstellen (aktuell noch Fallback auf alten Server)
-- [ ] **E-Mail** im Kontakt-Bereich ergänzen (optional)
-- [ ] **LinkedIn / weitere Links** prüfen und ggf. ergänzen
+- [ ] **Seminararbeiten**: bisherige Seminararbeiten sammeln und als Publications verlinken
+- [ ] **E-Mail** im Contact-Bereich ergänzen (optional – aktuell nur GitHub + LinkedIn)
 
-## Recht & Datenschutz
-
-- [x] **Impressum** erstellt (`impressum.html`, verlinkt im Footer)
-- [x] **Datenschutzerklärung** erstellt (`datenschutz.html`, verlinkt im Footer)
-- [x] **Google Fonts entfernt** → System-Font-Stack, keine externen Requests
-- [x] **Adresse aus Impressum entfernt** – nur Stadt + E-Mail, Hinweis auf private/nicht-kommerzielle Nutzung ergänzt
-
-## Deployment
-
-- [ ] Altes Repo `JayVeezy1/jayveezy1.github.io` löschen oder umbennen
-- [ ] Neues Repo `JayVeezy1/JayVeezy1.github.io` auf GitHub erstellen
-- [ ] Remote pushen: `git remote add origin … && git push -u origin main`
-- [ ] GitHub Pages in Repo-Settings aktivieren (Branch: `main`, Root: `/`)
+---
 
 ## Features
 
-- [ ] **Color-Shuffle-Button** (oben rechts): Klick ändert zufällig die CSS-Farbpalette der Website
-  - Button-Text: "don't like the look?"
-  - Zweiter Button: "reset" → setzt auf Standard-Farben zurück
-  - Status: **implementiert**, noch nicht getestet auf GitHub Pages
-- [ ] **Favicon** hinzufügen (`assets/favicon.ico` + `<link rel="icon">` in `index.html`)
-- [ ] **Open Graph Meta-Tags** für Link-Previews (Twitter/LinkedIn)
+- [ ] **Favicon** hinzufügen
+  - Icon-Datei in `assets/` ablegen
+  - `<link rel="icon" href="assets/favicon.ico">` in alle HTML-Dateien ergänzen
 
-## Hosting-Migration (wichtig)
+- [ ] **Open Graph / Social Meta-Tags** für Link-Previews (wenn Link auf LinkedIn/WhatsApp geteilt wird)
+  ```html
+  <meta property="og:title" content="Jakob Vanek" />
+  <meta property="og:description" content="..." />
+  <meta property="og:image" content="https://JayVeezy1.github.io/assets/profilbild_v01.png" />
+  <meta property="og:url" content="https://JayVeezy1.github.io" />
+  <meta name="twitter:card" content="summary" />
+  ```
 
-- [ ] **Cloudflare Pages** als Hosting-Alternative einrichten
-  - Free-Tier: unbegrenzte Deployments, kostenlose Domain `*.pages.dev`, custom domain möglich
-  - Vorteil: funktioniert mit **privaten GitHub-Repos** → Repo kann auf privat gestellt werden
-  - Ablauf: cloudflare.com → Pages → Connect to Git → Repo auswählen → kein Build-Command, Output: `/`
+- [ ] **Color-Shuffle verbessern** – Ideen:
+  - Gewählte Palette in `localStorage` speichern → überlebt Seiten-Reload
+  - CSS `transition` auf alle CSS-Variablen → sanftes Überblenden beim Farbwechsel
+  - Palette-Name als kurze Toast-Nachricht anzeigen beim Klicken (z.B. "🎨 Emerald")
+  - Tageszeit-basierte Auto-Palette: morgens warm/hell, abends dunkelblau/kalt
+  - Farbpaletten-Vorschau als kleine Kreise anzeigen statt blindem Zufallsklick
+
+---
+
+## Hosting-Migration
+
+- [ ] **Cloudflare Pages** einrichten (empfohlen – ermöglicht privates GitHub-Repo)
+  - Free-Tier: unbegrenzte Deployments, Domain `*.pages.dev`, Custom Domain möglich
+  - Ablauf: cloudflare.com → Pages → Connect to Git → Repo wählen → kein Build-Command, Output: `/`
+  - **Bonus:** Cloudflare kann Security-Header setzen (CSP, X-Frame-Options, HSTS) → deutliche Sicherheitsverbesserung
   - Danach: GitHub-Repo auf privat stellen, GitHub Pages deaktivieren
+
+---
+
+## Sicherheit & Datenschutz
+
+- [ ] **Security-Header** setzen (erst nach Cloudflare-Migration sinnvoll möglich):
+  - `Content-Security-Policy` – verhindert XSS und unerwünschte externe Ressourcen
+  - `X-Frame-Options: DENY` – verhindert Einbettung der Seite in fremde iframes (Clickjacking)
+  - `X-Content-Type-Options: nosniff` – verhindert MIME-Type-Sniffing
+  - `Strict-Transport-Security` (HSTS) – erzwingt HTTPS
+  - Cloudflare Pages unterstützt Custom Headers via `_headers`-Datei
+
+---
 
 ## Langfristig / Ideen
 
 - [ ] Migration zu **Astro** oder **Jekyll** wenn Inhalt stabil ist
 - [ ] Light/Dark-Mode Toggle
 - [ ] Blog-Sektion
+
+---
+
+## Erledigt ✓
+
+- [x] Grundstruktur initialisiert (HTML/CSS/JS, Single Page)
+- [x] Echte CV-Inhalte aus Lebenslauf übernommen (WM Datenservice, DB Energie, Siemens, …)
+- [x] Profilfoto eingebunden (`assets/profilbild_v01.png`)
+- [x] GAIDE-Projekt ergänzt
+- [x] 3D Rendering & Game Development Projekt ergänzt
+- [x] Color-Shuffle-Feature implementiert (10 Paletten + Reset)
+- [x] `rel="noopener noreferrer"` auf allen externen Links
+- [x] Google Fonts entfernt → System-Font-Stack (DSGVO-konform, keine externen Requests)
+- [x] Impressum erstellt (`impressum.html`) – ohne Privatadresse
+- [x] Datenschutzerklärung erstellt (`datenschutz.html`)
+- [x] `private/` in `.gitignore` aufgenommen
+- [x] HTTP-Links auf HTTPS umgestellt (DOI-Links)
+- [x] `lang="en"` gesetzt (Inhalt ist Englisch)
+- [x] Deployment auf GitHub Pages (`main`-Branch, automatisch aktiv)
