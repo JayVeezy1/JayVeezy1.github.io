@@ -13,11 +13,12 @@ Offene Aufgaben für die Website-Entwicklung.
 - [ ] **E-Mail** im Kontakt-Bereich ergänzen (optional)
 - [ ] **LinkedIn / weitere Links** prüfen und ggf. ergänzen
 
-## Recht & Datenschutz (wichtig)
+## Recht & Datenschutz
 
-- [ ] **Impressum**: Für eine professionelle Portfolio-Website in Deutschland gesetzlich vorgeschrieben (§ 5 DDG/TMG). Mindestangaben: Name, Adresse, Kontakt. Als eigene Seite oder Abschnitt im Footer ergänzen. *(Hinweis: Entscheide selbst ob du Adresse öffentlich zeigen möchtest – Postfach oder nur E-Mail reichen ggf. nicht aus)*
-- [ ] **Datenschutzerklärung**: Pflicht wegen Google Fonts (externe Anfrage an Google-Server → Weitergabe von IP-Adressen ohne Einwilligung – in Deutschland gerichtlich bestätigt). Entweder einfache Datenschutzseite ergänzen oder Google Fonts self-hosten (s. nächster Punkt)
-- [ ] **Google Fonts self-hosten**: Schriftart lokal ablegen statt von `fonts.googleapis.com` laden → löst DSGVO-Problem ohne Cookie-Banner. Anleitung: Font-Dateien von Google Fonts herunterladen, in `assets/fonts/` ablegen, `@font-face` in CSS einbinden, externe `<link>`-Tags entfernen
+- [x] **Impressum** erstellt (`impressum.html`, verlinkt im Footer)
+- [x] **Datenschutzerklärung** erstellt (`datenschutz.html`, verlinkt im Footer)
+- [x] **Google Fonts entfernt** → System-Font-Stack, keine externen Requests
+- [ ] **Impressum prüfen**: Sicherstellen dass Adresse (Melemstraße 5) öffentlich gezeigt werden soll – ggf. nur Postfach oder nur E-Mail (je nach rechtlicher Beratung)
 
 ## Deployment
 
