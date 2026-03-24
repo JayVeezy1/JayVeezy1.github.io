@@ -1,42 +1,53 @@
 # JayVeezy1.github.io
 
-Persönliche Website von Jakob, gehostet auf [GitHub Pages](https://pages.github.com/).
+Personal website of Jakob Vanek, hosted on [GitHub Pages](https://pages.github.com/).
 
 **Live:** https://JayVeezy1.github.io
 
 ---
 
+## Content
+
+Single-page personal site with:
+- **About / Hero** – intro, photo, links
+- **CV** – work experience, education, skills, languages, publications
+- **Current Projects** – live project cards with links
+- **Contact** – GitHub, LinkedIn
+
 ## Stack
 
 - HTML5, CSS3, Vanilla JavaScript
-- Keine Abhängigkeiten, kein Build-Schritt
-- Google Fonts (Inter)
+- No dependencies, no build step
+- Google Fonts (Inter) — planned: self-host for GDPR compliance
 
-## Lokale Entwicklung
+## Local Development
 
-Einfach `index.html` im Browser öffnen – kein Server nötig.
+Just open `index.html` in a browser — no server needed.
 
-Für Live-Reload optional:
+For live-reload (optional):
 ```bash
 npx serve .
-# oder
+# or
 python -m http.server 8000
 ```
 
 ## Deployment
 
-GitHub Pages serviert automatisch aus dem `main`-Branch. Nach einem Push ist die Website innerhalb weniger Minuten aktuell.
+GitHub Pages automatically serves from the `main` branch. After a push, the site updates within minutes.
 
-## Struktur
+## Structure
 
 ```
 /
-├── index.html       # Hauptseite
-├── css/style.css    # Styles
-├── js/main.js       # JavaScript
-└── assets/          # Bilder, Favicon
+├── index.html        # Main page
+├── css/style.css     # All styles
+├── js/main.js        # Scroll highlighting + color shuffle
+├── assets/           # Profile photo, future favicon
+├── private/          # Local only, gitignored
+├── CLAUDE.md         # Collaboration notes
+└── Todos.md          # Open tasks
 ```
 
-## Lizenz
+## License
 
 MIT
