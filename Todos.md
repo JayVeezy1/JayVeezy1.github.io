@@ -6,6 +6,7 @@ Offene Aufgaben für die Website-Entwicklung.
 
 ## Inhalt
 
+- [ ] **GAIDE-URL prüfen**: Railway-Deployment könnte inaktiv werden → ggf. neue URL in der Projektkarte aktualisieren (`index.html`, GAIDE-Card)
 - [ ] **Aktuelle Projekte** ergänzen – weitere echte Projekte mit Beschreibung und GitHub-Links
 - [ ] **Masterarbeit**: vollständigen Text verlinken (aktuell nur GitHub-Repo verlinkt)
 - [ ] **Seminararbeiten**: bisherige Seminararbeiten sammeln und als Publications verlinken
