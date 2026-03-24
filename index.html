@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jakob – Persönliche Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-name">Jakob</span>
+    <ul>
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#projects">Projekte</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="about" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hallo, ich bin</p>
+        <h1>Jakob <span class="accent">Vorname</span></h1>
+        <p class="hero-role"><!-- z.B. Software Developer · Data Scientist · Student --></p>
+        <p class="hero-bio">
+          <!-- Kurze Beschreibung über dich, was du machst, woran du interessiert bist. -->
+        </p>
+        <div class="hero-links">
+          <a href="https://github.com/JayVeezy1" target="_blank" class="btn-primary">GitHub</a>
+          <a href="#cv" class="btn-secondary">Lebenslauf</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Bild einfach in assets/ ablegen und src anpassen -->
+        <!-- <img src="assets/foto.jpg" alt="Foto von Jakob" /> -->
+        <div class="avatar-placeholder">JV</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <div class="container">
+      <h2>Lebenslauf</h2>
+
+      <div class="cv-grid">
+
+        <div class="cv-column">
+          <h3>Erfahrung</h3>
+
+          <div class="cv-entry">
+            <div class="cv-meta">
+              <span class="cv-date">2023 – heute</span>
+              <span class="cv-tag">Vollzeit</span>
+            </div>
+            <h4>Berufsbezeichnung</h4>
+            <p class="cv-org">Unternehmen / Organisation</p>
+            <p class="cv-desc">Kurze Beschreibung der Tätigkeit und wichtigster Verantwortlichkeiten.</p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-meta">
+              <span class="cv-date">2021 – 2023</span>
+              <span class="cv-tag">Werkstudent</span>
+            </div>
+            <h4>Berufsbezeichnung</h4>
+            <p class="cv-org">Unternehmen / Organisation</p>
+            <p class="cv-desc">Kurze Beschreibung der Tätigkeit.</p>
+          </div>
+        </div>
+
+        <div class="cv-column">
+          <h3>Ausbildung</h3>
+
+          <div class="cv-entry">
+            <div class="cv-meta">
+              <span class="cv-date">2019 – 2023</span>
+              <span class="cv-tag">Studium</span>
+            </div>
+            <h4>Studiengang</h4>
+            <p class="cv-org">Universität / Hochschule</p>
+            <p class="cv-desc">Abschluss: B.Sc. / M.Sc.</p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-meta">
+              <span class="cv-date">bis 2019</span>
+              <span class="cv-tag">Schule</span>
+            </div>
+            <h4>Abitur</h4>
+            <p class="cv-org">Name der Schule, Stadt</p>
+          </div>
+        </div>
+
+        <div class="cv-column">
+          <h3>Skills</h3>
+          <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML / CSS</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Git</span>
+            <span class="skill"><!-- weiterer Skill --></span>
+          </div>
+
+          <h3 style="margin-top: 2rem;">Sprachen</h3>
+          <div class="skills">
+            <span class="skill">Deutsch – Muttersprache</span>
+            <span class="skill">Englisch – fließend</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AKTUELLE PROJEKTE -->
+  <section id="projects">
+    <div class="container">
+      <h2>Aktuelle Projekte</h2>
+      <p class="section-sub">Woran ich gerade arbeite</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Projektname</h3>
+            <a href="https://github.com/JayVeezy1/repo" target="_blank" class="project-link">↗</a>
+          </div>
+          <p>Kurze Beschreibung des Projekts – was es macht, warum du es baust.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">In Arbeit</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Projektname</h3>
+            <a href="https://github.com/JayVeezy1/repo" target="_blank" class="project-link">↗</a>
+          </div>
+          <p>Kurze Beschreibung des Projekts.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Abgeschlossen</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Diese Website</h3>
+            <a href="https://github.com/JayVeezy1/JayVeezy1.github.io" target="_blank" class="project-link">↗</a>
+          </div>
+          <p>Meine persönliche Website – gebaut mit HTML, CSS und JavaScript. Gehostet auf GitHub Pages.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">In Arbeit</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <h2>Kontakt</h2>
+      <p>Du erreichst mich am besten über GitHub oder per E-Mail.</p>
+      <div class="contact-links">
+        <a href="https://github.com/JayVeezy1" target="_blank">GitHub</a>
+        <a href="mailto:deine@email.de">E-Mail</a>
+        <!-- weitere Links: LinkedIn, etc. -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jakob · <a href="https://github.com/JayVeezy1/JayVeezy1.github.io" target="_blank">Quellcode</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
