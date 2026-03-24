@@ -18,7 +18,7 @@ Offene Aufgaben für die Website-Entwicklung.
 - [x] **Impressum** erstellt (`impressum.html`, verlinkt im Footer)
 - [x] **Datenschutzerklärung** erstellt (`datenschutz.html`, verlinkt im Footer)
 - [x] **Google Fonts entfernt** → System-Font-Stack, keine externen Requests
-- [ ] **Impressum prüfen**: Sicherstellen dass Adresse (Melemstraße 5) öffentlich gezeigt werden soll – ggf. nur Postfach oder nur E-Mail (je nach rechtlicher Beratung)
+- [x] **Adresse aus Impressum entfernt** – nur Stadt + E-Mail, Hinweis auf private/nicht-kommerzielle Nutzung ergänzt
 
 ## Deployment
 
