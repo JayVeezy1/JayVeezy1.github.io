@@ -1,8 +1,8 @@
-# JayVeezy1.github.io
+# JakobVanek.github.io
 
 Personal website of Jakob Vanek, hosted on [GitHub Pages](https://pages.github.com/).
 
-**Live:** https://JayVeezy1.github.io
+**Live:** https://JakobVanek.github.io
 
 ---
 

@@ -6,8 +6,8 @@ Diese Datei dokumentiert den Entwicklungsprozess der persönlichen Website und d
 
 ## Projekt-Übersicht
 
-- **URL:** https://JayVeezy1.github.io
-- **Repo:** https://github.com/JayVeezy1/JayVeezy1.github.io
+- **URL:** https://JakobVanek.github.io
+- **Repo:** https://github.com/JakobVanek/JakobVanek.github.io
 - **Hosting:** GitHub Pages (Branch: `main`, Root: `/`)
 - **Aktueller Stack:** HTML, CSS, JavaScript (Vanilla)
 - **Geplante Migration:** Astro oder Jekyll (langfristig)
@@ -62,7 +62,7 @@ Die Website ist eine schlanke persönliche Seite mit:
 - [ ] Echte Inhaltsdaten eintragen (Name, Bio, CV-Einträge, Projekte)
 - [ ] Bild in `assets/` hinzufügen und Avatar-Placeholder ersetzen
 - [ ] E-Mail im Kontakt-Bereich eintragen
-- [ ] GitHub-Repo erstellen und pushen (`JayVeezy1/JayVeezy1.github.io`)
+- [ ] GitHub-Repo erstellen und pushen (`JakobVanek/JakobVanek.github.io`)
 - [ ] GitHub Pages in den Repo-Settings aktivieren
 - [ ] Favicon hinzufügen (`assets/favicon.ico` + `<link rel="icon">` in HTML)
 - [ ] Ggf. LinkedIn / weitere Links ergänzen
